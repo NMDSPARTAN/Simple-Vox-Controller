@@ -18,8 +18,8 @@ import numpy as np
 DocumentTrigger= "document"
 Create_new_document = "create new document"
 Edit_document = "edit"
-Overwrite_document = "overwrite"
-Modify_document_name = "modify name"
+
+
 ListTrigger = "list"
 ExitModeTrigger = (str("exit mode"))
 trigger_phrase = (str())
@@ -38,7 +38,7 @@ commands_file_location = Current_Path + "/commands.csv"
 config_file_location = Current_Path + "/config.csv"
 
 #model_location = Current_Path + '/EN-Model/'
-model = Model(r'/projects/Voice_control/VOSK/EN-Model/') #read model
+model = Model(r'/EN-Model/') ##########################################################Set location of EN-Model Folder!!!!!!!!!!!!!!!!!!!!!!!!
 #model = Model(r model_location) #read model
 recognizer = KaldiRecognizer(model, 16000)
 cap = pyaudio.PyAudio()
@@ -51,13 +51,13 @@ stream.start_stream()
 ####Document Vars\/\/\/\/
 Document_body = (str(""))
 Document_name = (str(""))
-#Document_test_location = open("/home/dawson/projects/Voice_control/RecordedDocument/List.txt", 'a+')
+
 Document_test_location = open(Current_Path + "/List.txt", 'a+')
-#Document_default_location = (str("/home/dawson/projects/Voice_control/RecordedDocument/"))
+
 Document_default_location = (str(Current_Path + "/RecordedDocument/"))
 Document_location = (str(""))
 Document_mode = (str(""))
-####Document vars/\/\/\/\
+####Document vars/\/\/\/\#
 
 ##############################################################
 
