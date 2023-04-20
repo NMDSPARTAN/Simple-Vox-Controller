@@ -1,15 +1,19 @@
 # Simple-Vox-Controller
-1.Install fellowing dependents (dont forget to run "apt get update":
-  sudo apt install python3
-  sudo apt install python3-pip
-  sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-  sudo apt-get install ffmpeg libav-tools
-  sudo pip install pyaudio
-  pip3 install vosk
-  pip3 install pandas
-  pip install numpy
-  
- 2. Once these are installed go into the code it's self and set the location of the varible "modle" and set the location to where the EN-Model folder is. (Must be in the format "r'(EN-Modle location)')
- 
- 4. Go into the "command list" csv file and input your listening cmd in the first column and the application location you want to launch in the second column
-  
+Read Me:
+
+1.	sudo apt upgrade
+2.	sudo apt install python3-pip
+3.	sudo apt install python3-pyaudio
+4.	sudo pip install pandas
+5.	sudo pip install numpy
+6.	sudo pip3 install vosk
+7.	sudo apt install git
+8.	use CD% to navigate to where you want the program to be located
+9.	use git clone to download repository
+10.	doownload smallest EN package from: https://alphacephei.com/vosk/models
+11.	extract Download
+12.	Change name of extracted download folder into "EN-Model" and move it to the same folder the program is located
+13.	Open pyton script and set the varible 'modle' (located at line 41) to "Model('r <EN-Model folder location>)
+
+
+
