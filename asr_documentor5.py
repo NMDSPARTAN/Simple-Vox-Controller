@@ -34,8 +34,8 @@ trigger_phrase = (str())
 ####Main Vars\/\/\/\/
 triggerword = (str("israel"))
 Current_Path = os.getcwd()
-commands_file_location = Current_Path + "/commands.csv"
-config_file_location = Current_Path + "/config.csv"
+commands_file_location = Current_Path + "/command_list.csv"
+
 
 #model_location = Current_Path + '/EN-Model/'
 model = Model(r'/EN-Model/') ##########################################################Set location of EN-Model Folder!!!!!!!!!!!!!!!!!!!!!!!!
