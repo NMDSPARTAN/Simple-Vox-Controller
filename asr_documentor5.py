@@ -29,11 +29,12 @@ trigger_phrase = (str())
 
 ##############################################################
 Current_Path = os.getcwd()
+commands_file_location = Current_Path + "/command_list.csv"
 
 ####Start Sound\/\/\/\/\/\/#############################################
 
 
-Current_Path = os.getcwd()
+
 
 
 pygame.init()
