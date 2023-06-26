@@ -38,7 +38,7 @@ Current_Path = os.getcwd()
 
 pygame.init()
 
-sound_file = Current_Path + "/sound2.mp3"
+sound_file = Current_Path + "/sound1.mp3"
 pygame.mixer.music.load(sound_file)
 
 pygame.mixer.music.play()
