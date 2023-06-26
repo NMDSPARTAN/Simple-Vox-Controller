@@ -6,6 +6,7 @@ import os
 import csv
 import pandas as pd
 import numpy as np
+import pygame
 
 
 
@@ -27,13 +28,39 @@ trigger_phrase = (str())
 ####TRIGGERs/\/\/\/\//\/\
 
 ##############################################################
+Current_Path = os.getcwd()
 
+####Start Sound\/\/\/\/\/\/#############################################
+
+
+Current_Path = os.getcwd()
+
+
+pygame.init()
+
+sound_file = Current_Path + "/sound2.mp3"
+pygame.mixer.music.load(sound_file)
+
+pygame.mixer.music.play()
+
+pygame.time.delay(750)
+
+pygame.mixer.music.stop()
+pygame.quit()
+
+
+
+
+
+
+
+####Start Sound/\/\/\/\/\/\#############################################
 
 
 ##############################################################
 ####Main Vars\/\/\/\/
 triggerword = (str("israel"))
-Current_Path = os.getcwd()
+
 commands_file_location = Current_Path + "/command_list.csv"
 
 
@@ -47,6 +74,16 @@ stream.start_stream()
 
 ####Main Vars/\/\/\/\
 ##############################################################
+
+
+
+
+
+
+
+
+
+
 
 ####Document Vars\/\/\/\/
 Document_body = (str(""))
